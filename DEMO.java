@@ -1,3 +1,5 @@
+
+
 public class TensorFlowObjectDetectionAPIModel implements Classifier {
 private static final Logger LOGGER = new Logger();
 private static final int MAX_RESULTS = 100;
@@ -12,11 +14,7 @@ private float[] outputClasses;
 private float[] outputNumDetections;
 private String[] outputNames;
 
-
-
 private boolean logStats = false;
-
-
 
 private TensorFlowInferenceInterface inferenceInterface;
 public static Classifier create(
@@ -25,8 +23,6 @@ final String modelFilename,
 final String labelFilename,
 final int inputSize) throws IOException {
 final TensorFlowObjectDetectionAPIModel d = new TensorFlowObjectDetectionAPIModel();
-
-
 
 InputStream labelsInput = null;
 String actualFilename = labelFilename.split("file:///android_asset/")[1];
@@ -40,16 +36,9 @@ d.labels.add(line);
 }
 br.close();
 
-
-
-
 d.inferenceInterface = new TensorFlowInferenceInterface(assetManager, modelFilename);
 
-
-
 final Graph g = d.inferenceInterface.graph();
-
-
 
 d.inputName = "image_tensor";
 final Operation inputOp = g.operation(d.inputName);
@@ -70,8 +59,6 @@ final Operation outputOp3 = g.operation("detection_classes");
 if (outputOp3 == null) {
 throw new RuntimeException("Failed to find output Node 'detection_classes'");
 }
-
-
 
 d.outputNames = new String[] {"detection_boxes", "detection_scores",
 "detection_classes", "num_detections"};
