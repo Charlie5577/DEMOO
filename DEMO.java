@@ -53,9 +53,7 @@ private float[] outputScores;
 private float[] outputClasses;
 private float[] outputNumDetections;
 private String[] outputNames;
-
 private boolean logStats = false;
-
 private TensorFlowInferenceInterface inferenceInterface;
 public static Classifier create(
 final AssetManager assetManager,
