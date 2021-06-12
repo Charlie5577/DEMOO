@@ -1,0 +1,87 @@
+[
+    {
+        "1": "Which Set class should be most popular in a multi-threading environment, considering performance constraint?",
+        "2": "Which Map class should be most popular in a multi-threading environment, considering performance constraint?",
+        "3": "Which allows the removal of elements from a collection?",
+        "4": "Which permits the removal of elements from a collection",
+        "5": "The Comparator interface contains the method",
+        "6": "Which of those is synchronized",
+        "7": "Which offers the best performance",
+        "8": "Which of these is the most popularly used class as a key in a HashMap",
+        "9": "What should we use when add and remove operations are more frequent than get operations",
+        "10": "Iterator returned by ArrayList is "
+    },
+    {
+        "1": {
+            "a": "HashSet",
+            "b": "ConcurrentSkipListSet",
+            "c": "LinkedHashSet",
+            "d": "CopyOnWriteArraySet"
+        },
+        "2": {
+            "a": "Hashtable",
+            "b": "CopyOnWriteMap",
+            "c": "ConcurrentHashMap",
+            "d": "ConcurrentMap"
+        },
+        "3": {
+            "a": "Enumeration",
+            "b": "Iterator",
+            "c": "Both",
+            "d": "None of the above"
+        },
+        "4": {
+            "a": "Enumeration",
+            "b": "Iterator",
+            "c": "Both",
+            "d": "None of the above"
+        },
+        "5": {
+            "a": "compareWith",
+            "b": "compareTo()",
+            "c": "compare()",
+            "d": "compareThis()"
+        },
+        "6": {
+            "a": "TreeMap",
+            "b": "HashMap",
+            "c": "Hashtable",
+            "d": "Tree"
+        },
+        "7": {
+            "a": "TreeMap",
+            "b": "HashMap",
+            "c": "LinkedHashMap",
+            "d": "None of the Above"
+        },
+        "8": {
+            "a": "String",
+            "b": "Integer",
+            "c": "Double",
+            "d": "All of the above"
+        },
+        "9": {
+            "a": "LinkedList",
+            "b": "ArrayList",
+            "c": "Vector",
+            "d": "find"
+        },
+        "10": {
+            "a": "Fail-fast",
+            "b": "Fail-safe",
+            "c": "safe",
+            "d": "None of the above"
+        }
+    },
+    {
+        "1": "ConcurrentSkipListSet",
+        "2": "CopyOnWriteMap",
+        "3": "None of the above",
+        "4": "Iterator",
+        "5": "compare()",
+        "6": "Hashtable",
+        "7": "HashMap",
+        "8": "Integer",
+        "9": "LinkedList",
+        "10": "Fail-fast"
+    }
